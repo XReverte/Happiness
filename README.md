@@ -3,8 +3,9 @@
 ## Table of contents
 - README.md --> Project motivation | Goals | Methodology | Results | Conclussions | Limitations | Future Work | Contributions | Tools
 - Happiness_XReverte.pdf --> The project itself
-- encuesta.ipynb --> Sample code used for the 'Survey' study
-- relookyou.ipynb --> Sample code used for the "Relookyou" case in the 'Personal' study
+- Survey.ipynb --> Sample code used for the 'Survey' study
+- Relookyou_Original.ipynb --> Sample code used for the "Relookyou" case in the 'Personal' study
+- Relookyou_Updated --> Updated version of the original 'Relookyou' case study. This version includes a significantly larger sample size and demonstrates my current skills more accurately [Work in progress]
 
 ## Motivation
 **Do we understand our happiness? Do we know what fosters it?** Perhaps we are too drawn to the ease and comfort of audiovisual content *'to help you disconnect'*, relegating more enriching options that promote personal growth, such as reading a book, practicing sports, meeting new people, or simply reflecting. This *'comfort zone'* in which our contemporary society finds itself could be a degenerative and corrupt spiral: work, distract oneself by watching a series, and sleep. Technological comforts, perhaps the *'soma'* of the 21st century, may provide immediate rewards and numb those who consume them, but do they truly lead to happiness? Reflections like those portrayed in *Aldous Huxley's 'Brave New World' (1932)* urge us to consider whether the pursuit of happiness should go further.
