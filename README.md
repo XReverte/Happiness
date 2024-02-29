@@ -1,13 +1,13 @@
 # "Analysis of Influencing Factors on Personal Happiness: A Machine Learning Approach Using Multidimensional Data"
 
 ## Table of contents
-- README.md --> Overview of the project, the goals, the tools used, and how to navigate the repository
+- README.md --> Project motivation | Goals | Methodology | Results | Conclussions | Limitations | Future Work | Contributions | Tools
 - Happiness_XReverte.pdf --> The project itself
 - encuesta.ipynb --> Sample code used for the 'Survey' study
 - relookyou.ipynb --> Sample code used for the "Relookyou" case in the 'Personal' study
 
 ## Motivation
-**Do we understand our happiness? Do we know what fosters it?** Perhaps we are too drawn to the ease and comfort of audiovisual content 'to help you disconnect,' relegating more enriching options that promote personal growth, such as reading a book, practicing sports, meeting new people, or simply reflecting. This 'comfort zone' in which our contemporary society finds itself could be a degenerative and corrupt spiral: work, distract oneself by watching a series, and sleep. Technological comforts, perhaps the *'soma'* of the 21st century, may provide immediate rewards and numb those who consume them, but do they truly lead to happiness? Reflections like those portrayed in *Aldous Huxley's 'Brave New World' (1932)* urge us to consider whether the pursuit of happiness should go further.
+**Do we understand our happiness? Do we know what fosters it?** Perhaps we are too drawn to the ease and comfort of audiovisual content *'to help you disconnect'*, relegating more enriching options that promote personal growth, such as reading a book, practicing sports, meeting new people, or simply reflecting. This *'comfort zone'* in which our contemporary society finds itself could be a degenerative and corrupt spiral: work, distract oneself by watching a series, and sleep. Technological comforts, perhaps the *'soma'* of the 21st century, may provide immediate rewards and numb those who consume them, but do they truly lead to happiness? Reflections like those portrayed in *Aldous Huxley's 'Brave New World' (1932)* urge us to consider whether the pursuit of happiness should go further.
 
 The pursuit of happiness and its determinants has been a recurring theme throughout human history. In this ever-changing world, where social dynamics and technologies evolve rapidly, it becomes even more plausible that the factors shaping happiness also undergo transformations. **Understanding these nuances becomes crucial**, not only for individual satisfaction but also for addressing collective challenges related to mental health and well-being.
 
@@ -15,9 +15,11 @@ In this context of exploration and discovery, the present work is dedicated to e
 
 To achieve this goal, we utilized two sets of datasets (*'Encuesta'* and *'Personal'*) and applied a combination of data analysis techniques and machine learning tailored to their particularities.
 
-***'Encuesta'*** refers to a questionnaire aimed at describing the personal profile of the respondent and defining the set of activities and habits that most influence their happiness and well-being. These habits and activities (referred to as 'subtopics') are grouped into 8 different topics: hobbies, external aspects, sports, diet, social interactions, productive time, sleep patterns, and harmful habits or vices.
+***'Encuesta'*** refers to a questionnaire aimed at describing the personal profile of the respondent and defining the set of activities and habits that most influence their happiness and well-being. These habits and activities (referred to as *'subtopics'*) are grouped into 8 different topics: hobbies, external aspects, sports, diet, social interactions, productive time, sleep patterns, and harmful habits or vices.
 
-***'Personal'***, on the other hand, captures the daily activities and habits of different participants, as well as the target variable, the subjective evaluation of perceived happiness each day. Similarly to the 'Survey' dataset, these activities can be grouped into the same 8 topics.
+***'Personal'***, on the other hand, captures the daily activities and habits of different participants, as well as the target variable, the subjective evaluation of perceived happiness each day. Similarly to the *'Encuesta'* dataset, these activities can be grouped into the same 8 topics.
+
+![Cubierta](https://github.com/XReverte/Happiness/assets/100844285/84b58f52-6dc0-42b9-9b33-d29c8e765292)
 
 ## Goals
 The main objective of this work is to **identify and understand the factors that influence individuals' personal happiness** in different contexts and situations. With this, we implicitly aim to **design a methodology** based on advanced data analysis techniques and machine learning that allows us to identify these influencing factors.
@@ -33,11 +35,20 @@ In addition to these objectives, which are more related to the methodology of ou
 ## Methodology
 The methodology begins with the study of the ***'Encuesta'***.. Once the dataset has been appropriately processed, it was divided into 3 fractions: based on personal profile (*'pProfile'*), the topics that most influence happiness (*'topics'*), and their associated subtopics (*'subtopics'*). Each portion and the complete set (*'encuesta'*) were then clustered. Our intention is to segment the respective datasets using the 'K-means' technique, identifying significant differences between groups and constructing and assembling different machine learning models that predict the labels assigned to each dataset. The importance of features in predicting groups will be extracted, allowing us to identify which of the differences between groups are the most important.
 
-Subsequently, in the ***'Personal'*** study, we will work with multiple longitudinal datasets. The purpose is to discern the variables that have the greatest influence on each participant's happiness. Different machine learning models predicting the daily level of happiness were constructed and assembled based on the various recorded activities, obtaining the importance of features in their prediction. Additionally, each participant also responded to the survey, allowing the determination of the groups to which they belong according to their various segmentations in 'Encuesta' ('pProfile', 'topics', 'subtopics', and 'encuesta'), and the presumed factors that most influence their happiness.
+Subsequently, in the ***'Personal'*** study, we will work with multiple longitudinal datasets. The purpose is to discern the variables that have the greatest influence on each participant's happiness. Different machine learning models predicting the daily level of happiness were constructed and assembled based on the various recorded activities, obtaining the importance of features in their prediction. Additionally, each participant also responded to the survey, allowing the determination of the groups to which they belong according to their various segmentations in *'Encuesta'* (*'pProfile'*, *'topics'*, *'subtopics'*, and *'encuesta'*), and the presumed factors that most influence their happiness.
 
 **Interweaving the two approaches**, this procedure aims to anticipate the most influential variables for each participant (*'Personal'*) according to their segmentations (*'Encuesta'*), providing guidance to correctly focus attention on the variables for each participant. Additionally, we can confirm or refute the generalities previously identified through the analysis of *'Encuesta'*. Specifically, for each participant, the activities were highlighted that, according to their segmentation, are assumed to have extreme influences (high or low compared to the rest of the groups), based on the analysis of differences between groups in *'Encuesta'*. These were then contrasted with the importance of features obtained in assembling predictive models of the happiness level in *'Personal'*.
 
 **In summary**, this work addresses the determination of influential factors in personal happiness through two distinct studies, *'Encuesta'* and *'Personal'*. It employs techniques of statistical data analysis and machine learning to study differences between groups, segment and predict, in order to highlight the relevance of features in happiness. The intersection of both approaches seeks to understand to what extent segmentation of the population can provide insight into the variables that affect happiness in different groups.
+
+![Pipeline_encuesta](https://github.com/XReverte/Happiness/assets/100844285/da75f3d8-8a5c-4f3e-b6a1-cc3257cb22dc)
+Graphical representation of the workflow for the *'Survey'* study
+
+
+
+.
+![pipeline_personal](https://github.com/XReverte/Happiness/assets/100844285/fbdf973d-7ca1-4db4-a7c1-dbeb0a398b08)
+Graphical representation of the workflow for the 'Relookyou' case in *'Personal'* study
 
 ## Results and conclusions
 **Our study results** indicate that, overall, the characteristics predicted based on segmentation in the survey do not correspond too closely with the results obtained in the *'Personal'* study. Thus, there are discrepancies between the expectations, understood as the influence of variables on happiness based on segmentation, and the actual influences of the participants according to their personal study.
@@ -50,9 +61,7 @@ The relationship between preferences, activities, and happiness is **complex and
 
 The respondents were successfully segmented based on their personal profiles and declared preferences, as well as the characterization of the groups formed according to their habits and activities, **understanding how different segments pursue happiness**.
 
-We effectively analyzed personal longitudinal data, **determining the relative influence of variables and factors on participants' happiness**.
-
-However, considering that there are discrepancies between expectations and actual influences, we conclude that **our segmentation is not appropriate for conjecturing the influential characteristics of an individual**.
+We effectively analyzed personal longitudinal data, **determining the relative influence of variables and factors on participants' happiness**. However, considering that there are discrepancies between expectations and actual influences, we conclude that **our segmentation is not appropriate for conjecturing the influential characteristics of an individual**.
 
 Nevertheless, we consider the methodological framework designed to link both approaches and evaluate the accuracy of segmentation in predicting the influence of activities on an individual to be successful. Despite certain limitations, **we have achieved a better understanding of the factors influencing personal happiness**.
 
@@ -72,6 +81,9 @@ Individuals' preferences and activities can change over time. The study is based
 Finally, the **lack of graphical representations** in the results is acknowledged. A simple, effective, innovative, and impactful visualization of the results is essential for clearly communicating the findings and impressing the reader.
 
 These limitations highlight the complexity in researching happiness, as well as our own areas for improvement in the field of data science. However, despite these limitations, the results continue to provide valuable information about the interplay between activities, preferences, and happiness.
+
+![ensamble_performance](https://github.com/XReverte/Happiness/assets/100844285/b65a5136-99af-49e8-a720-60bd7d40ad5d)
+Graphical representation of the performance of the assemblies and datasets studied - *'Personal'*
 
 ## Future work
 The present study has provided valuable insights into the complex interplay between individual preferences, actual activities, and the experienced happiness of participants. However, it has become evident that the work has certain shortcomings. In future work, efforts will be made to mitigate these aforementioned limitations, and additionally, new areas for improvement and enrichment in research will be explored.
