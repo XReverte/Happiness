@@ -43,13 +43,13 @@ Subsequently, in the ***'Personal'*** study, we will work with multiple longitud
 **In summary**, this work addresses the determination of influential factors in personal happiness through two distinct studies, *'Encuesta'* and *'Personal'*. It employs techniques of statistical data analysis and machine learning to study differences between groups, segment and predict, in order to highlight the relevance of features in happiness. The intersection of both approaches seeks to understand to what extent segmentation of the population can provide insight into the variables that affect happiness in different groups.
 
 ![Pipeline_encuesta](https://github.com/XReverte/Happiness/assets/100844285/da75f3d8-8a5c-4f3e-b6a1-cc3257cb22dc)
-Graphical representation of the workflow for the *'Survey'* study
+*Graphical representation of the workflow for the 'Survey' study*
 
 
 
 .
 ![pipeline_personal](https://github.com/XReverte/Happiness/assets/100844285/fbdf973d-7ca1-4db4-a7c1-dbeb0a398b08)
-Graphical representation of the workflow for the 'Relookyou' case in *'Personal'* study
+*Graphical representation of the workflow for the 'Relookyou' case in 'Personal' study*
 
 ## Results and conclusions
 **Our study results** indicate that, overall, the characteristics predicted based on segmentation in the survey do not correspond too closely with the results obtained in the *'Personal'* study. Thus, there are discrepancies between the expectations, understood as the influence of variables on happiness based on segmentation, and the actual influences of the participants according to their personal study.
@@ -84,7 +84,7 @@ Finally, the **lack of graphical representations** in the results is acknowledge
 These limitations highlight the complexity in researching happiness, as well as our own areas for improvement in the field of data science. However, despite these limitations, the results continue to provide valuable information about the interplay between activities, preferences, and happiness.
 
 ![ensamble_performance](https://github.com/XReverte/Happiness/assets/100844285/b65a5136-99af-49e8-a720-60bd7d40ad5d)
-Graphical representation of the performance of the assemblies and datasets studied - *'Personal'*
+*Graphical representation of the performance of the assemblies and datasets studied - 'Personal'*
 
 ## Future work
 The present study has provided valuable insights into the complex interplay between individual preferences, actual activities, and the experienced happiness of participants. However, it has become evident that the work has certain shortcomings. In future work, efforts will be made to mitigate these aforementioned limitations, and additionally, new areas for improvement and enrichment in research will be explored.
@@ -101,6 +101,6 @@ This study contributes to the understanding of human well-being, allowing for a 
 The approach taken **addresses the gap between perceptions** (*'Survey'*) **and behaviors** (*'Personal'*), which could become a relevant phenomenon in psychological and sociological research. This work provides a valuable approach to understanding how these discrepancies affect happiness.
 
 ## Tools
-- Technologies: Python | Excel | Google Forms | Coogle | AEMET API
+- Technologies: Python | Excel | Google Forms | Coogle | AEMET API | LaTeX
 - Libraries: numpy | pandas | matplotlib | seaborn | graphviz | sklearn | scipy | statsmodels | skmultilearn | xgboost | prince | requests
 - Machine Learning Models: K-Means | Decission Tree | Random Forest | Gradient Boosting | Extreme Gradient Boosting | Support Vector Machine | Linear Regression | Ensemble approach
